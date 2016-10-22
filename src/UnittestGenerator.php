@@ -15,7 +15,7 @@ class UnittestGenerator
     public $scanned = 0;
     public $existing = 0;
 
-    public $folder = '';
+    public $folder_project = '';
     public $folder_test = '';
     public $namespace_project = '';
     public $project_author = '';
@@ -23,24 +23,24 @@ class UnittestGenerator
     /**
      * UnittestGenerator constructor.
      *
-     * @param $folder
+     * @param $folder_project
      * @param $folder_test
      * @param $namespace_project
      * @param $project_author
      */
-    public function __construct($folder, $folder_test, $namespace_project, $project_author)
+    public function __construct($folder_project, $folder_test, $namespace_project, $project_author)
     {
-        $this->folder = $folder;
+        $this->folder_project = $folder_project;
         $this->folder_test = $folder_test;
         $this->namespace_project = $namespace_project;
         $this->project_author = $project_author;
 
         // find all files
-        $this->folderscan($folder);
+        $this->folderscan($folder_project);
 
         foreach ($this->folders as $subfolder) {
             $files_prefix = $subfolder;
-            $this->folderscan($folder . DIRECTORY_SEPARATOR . $subfolder, $files_prefix);
+            $this->folderscan($folder_project . DIRECTORY_SEPARATOR . $subfolder, $files_prefix);
         }
         $this->create_test_files();
         $this->create_summary();
