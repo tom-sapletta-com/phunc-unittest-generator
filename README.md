@@ -5,7 +5,7 @@ With UnittestGenerator is possible create some part of file, but not all, beacue
 + class name
 + one method
 
-## article
+## Article
 https://tom.sapletta.com/project/a-tool-to-automatically-generate-phpunit-tests/
 
 ## Example
