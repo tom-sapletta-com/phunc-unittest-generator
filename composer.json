@@ -1,0 +1,28 @@
+{
+  "name": "tom-sapletta-com/unittest-generator",
+  "description": "Generating PHP Unittest",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "phpunit generator",
+    "automatically tests",
+    "PHPUnit tests"
+  ],
+  "homepage": "https://github.com/tom-sapletta-com/unittest-generator",
+  "authors": [
+    {
+      "name": "Tomasz Sapletta",
+      "email": "tom@sapletta.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^5.3.3 || ^7.0",
+    "phpunit/phpunit": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
