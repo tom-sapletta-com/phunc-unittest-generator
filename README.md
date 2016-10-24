@@ -12,3 +12,18 @@ https://tom.sapletta.com/project/a-tool-to-automatically-generate-phpunit-tests/
 ```
 $scaninfo = new UnittestGenerator($folder_project, $folder_test, $namespace_project, $project_author);
 ```
+
+#How it works
+
+configuration data
+ + set path_source for searching php classes
+ + set path_test folder for tests
+ + template for unit test
+
+find in path_source php files and get just classes:
+ + no interface
+ + no abstract
+ + no functions
+
+generate files for test content in path_test folder
+show summary
