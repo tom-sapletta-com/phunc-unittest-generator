@@ -4,9 +4,11 @@ With UnittestGenerator is possible create some part of file, but not all, beacue
 + files
 + class name
 + one method
+This is version based on Phunc implementation with more classes, another version one class exist here:
+https://github.com/tom-sapletta-com/unittest-generator
 
 ## Article
-https://tom.sapletta.com/project/a-tool-to-automatically-generate-phpunit-tests/
+https://tom.sapletta.com/en/project-en/a-tool-to-automatically-generate-phpunit-tests/
 
 ## Example
 ```

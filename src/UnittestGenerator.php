@@ -30,20 +30,23 @@ class UnittestGenerator
      */
     public function __construct($folder_project, $folder_test, $namespace_project, $project_author)
     {
-        $this->folder_project = $folder_project;
-        $this->folder_test = $folder_test;
-        $this->namespace_project = $namespace_project;
-        $this->project_author = $project_author;
+//        $this->folder_project = $folder_project;
+//        $this->folder_test = $folder_test;
+//        $this->namespace_project = $namespace_project;
+//        $this->project_author = $project_author;
 
         // find all files
-        $this->folderscan($folder_project);
+        $folder_project = new LocalPath($folder_project);
+        $filess = new GetFileItemsFromFolder($folder_project);
 
-        foreach ($this->folders as $subfolder) {
-            $files_prefix = $subfolder;
-            $this->folderscan($folder_project . DIRECTORY_SEPARATOR . $subfolder, $files_prefix);
-        }
-        $this->create_test_files();
-        $this->create_summary();
+//        $this->folderscan($folder_project);
+//
+//        foreach ($this->folders as $subfolder) {
+//            $files_prefix = $subfolder;
+//            $this->folderscan($folder_project . DIRECTORY_SEPARATOR . $subfolder, $files_prefix);
+//        }
+//        $this->create_test_files();
+//        $this->create_summary();
     }
 
     /**

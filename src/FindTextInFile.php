@@ -1,50 +1,22 @@
 <?php
 
 /**
- * Project: unittest-generator,
- * File created by: tom-sapletta-com, on 24.10.2016, 08:32
+ * Project: phunc-unittest-generator,
+ * File created by: tom-sapletta-com, on 26.10.2016, 19:00
  */
-class FindTextInFile implements Searching, Result
+class FindTextInFile
 {
-
-    public $result = false;
-
-    /*
-     * add new Type for
-     * ItemsArray
-     * FilePath
-     *
-     */
-    /**
-     * @param $what
-     * @param $where
-     * @return bool
-     */
-    public function searching($what, $where)
+    public function __construct($file_list)
     {
-        if (empty($what)) {
-            return false;
+        $entry = str_replace('.php', '', $entry);
+        $needle = ['interface', 'abstract'];
+//        $is_find = $this->find_in_file($needle, $filepath);
+        $is_find = (string) new SearchingFile($needle, $filepath);
+        if ($is_find) {
+            $this->files_excluded[] = $files_prefix . $entry;
+        } else {
+            $this->files[] = $files_prefix . $entry;
         }
-        if (!is_array($what)) {
-            $what = [$what];
-        }
-        foreach ($what as $val) {
-            $result = (strpos(file_get_contents($where), $val) !== false);
-            if ($result) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public function __construct($what, $where)
-    {
-        $this->result = $this->searching($what, $where);
-    }
-
-    public function result()
-    {
-        return $this->result;
     }
 
 }
