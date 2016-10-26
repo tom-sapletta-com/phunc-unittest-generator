@@ -1,9 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
-.idea/deployment.xml
-.idea/modules.xml
-.idea/unittest-generator.iml
-.idea/workspace.xml
+.idea/
 src/
 Would skip repository vendor/doctrine/instantiator
 Would skip repository vendor/phpdocumentor/reflection-common
@@ -35,4 +32,6 @@ vendor/composer
 vendor/myclabs
 .idea/webResources.xml
 tests/
+'.idea' 
+Would skip repository vendor/tom-sapletta-com/phunc
 '.idea' 
