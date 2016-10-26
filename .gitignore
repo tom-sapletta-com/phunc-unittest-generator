@@ -35,3 +35,4 @@ vendor/composer
 vendor/myclabs
 .idea/webResources.xml
 tests/
+'.idea' 
