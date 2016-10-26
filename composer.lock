@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8551a19a5d14e11c8a4ada4c817f6b6b",
-    "content-hash": "9fbe92915944744f98954111fee76664",
+    "hash": "c666b10a2f06663d4f3f34e34786b287",
+    "content-hash": "23e0e3f6606700c0563f803c3befe589",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -1217,12 +1217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "3d42c56f989688ad0790dcdc3c706d60748af6a6"
+                "reference": "d2cab32980d8de786744fabdec95991a0ebd7ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/3d42c56f989688ad0790dcdc3c706d60748af6a6",
-                "reference": "3d42c56f989688ad0790dcdc3c706d60748af6a6",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/d2cab32980d8de786744fabdec95991a0ebd7ea8",
+                "reference": "d2cab32980d8de786744fabdec95991a0ebd7ea8",
                 "shasum": ""
             },
             "require": {
@@ -1264,7 +1264,52 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-21 21:10:51"
+            "time": "2016-10-24 18:44:12"
+        },
+        {
+            "name": "tom-sapletta-com/phunc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tom-sapletta-com/Phunc.git",
+                "reference": "18bb939fb790d34de3468b4cd2cc90e6a639b565"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tom-sapletta-com/Phunc/zipball/18bb939fb790d34de3468b4cd2cc90e6a639b565",
+                "reference": "18bb939fb790d34de3468b4cd2cc90e6a639b565",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phunc\\": "src/",
+                    "Config\\": "config/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomasz Sapletta",
+                    "email": "tom@sapletta.com"
+                }
+            ],
+            "description": "Functional Environment for PHP",
+            "homepage": "http://phunc.de",
+            "keywords": [
+                "functional programming",
+                "strong typing"
+            ],
+            "time": "2016-10-21 18:16:58"
         },
         {
             "name": "webmozart/assert",

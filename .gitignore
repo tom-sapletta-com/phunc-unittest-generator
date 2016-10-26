@@ -29,6 +29,7 @@ vendor/autoload.php
 vendor/bin
 vendor/composer
 vendor/myclabs
+.idea
 .idea/webResources.xml
 .idea/vcs.xml
 .idea/phunc-unittest-generator.iml

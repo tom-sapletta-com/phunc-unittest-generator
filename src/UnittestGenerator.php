@@ -50,54 +50,54 @@ class UnittestGenerator
      * @param $folder
      * @param string $files_prefix
      */
-    public function folderscan($folder, $files_prefix = '')
-    {
-        if ($handle = opendir($folder)) {
-            while (false !== ($entry = readdir($handle))) {
-                $filepath = $folder . DIRECTORY_SEPARATOR . $entry;
-                if ($entry != "." && $entry != "..") {
-                    if (is_file($filepath)) {
-                        $entry = str_replace('.php', '', $entry);
-
-
-                        $needle = ['interface', 'abstract'];
-                        $is_find = $this->find_in_file($needle, $filepath);
-                        if ($is_find) {
-                            $this->files_excluded[] = $files_prefix . $entry;
-                        } else {
-                            $this->files[] = $files_prefix . $entry;
-                        }
-                        $this->scanned++;
-                    } else {
-                        $this->folders[] = $entry;
-                    }
-                }
-            }
-            closedir($handle);
-        }
-    }
+//    public function folderscan($folder, $files_prefix = '')
+//    {
+//        if ($handle = opendir($folder)) {
+//            while (false !== ($entry = readdir($handle))) {
+//                $filepath = $folder . DIRECTORY_SEPARATOR . $entry;
+//                if ($entry != "." && $entry != "..") {
+//                    if (is_file($filepath)) {
+//                        $entry = str_replace('.php', '', $entry);
+//
+//
+//                        $needle = ['interface', 'abstract'];
+//                        $is_find = $this->find_in_file($needle, $filepath);
+//                        if ($is_find) {
+//                            $this->files_excluded[] = $files_prefix . $entry;
+//                        } else {
+//                            $this->files[] = $files_prefix . $entry;
+//                        }
+//                        $this->scanned++;
+//                    } else {
+//                        $this->folders[] = $entry;
+//                    }
+//                }
+//            }
+//            closedir($handle);
+//        }
+//    }
 
     /**
      * @param $needle
      * @param $filepath
      * @return mixed
      */
-    public function find_in_file($needle, $filepath)
-    {
-        if (empty($needle)) {
-            return false;
-        }
-        if (!is_array($needle)) {
-            $needle = [$needle];
-        }
-        foreach ($needle as $val) {
-            $result = (strpos(file_get_contents($filepath), $val) !== false);
-            if ($result) {
-                return true;
-            }
-        }
-        return false;
-    }
+//    public function find_in_file($needle, $filepath)
+//    {
+//        if (empty($needle)) {
+//            return false;
+//        }
+//        if (!is_array($needle)) {
+//            $needle = [$needle];
+//        }
+//        foreach ($needle as $val) {
+//            $result = (strpos(file_get_contents($filepath), $val) !== false);
+//            if ($result) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
     /**
      * @param $namespace

@@ -1,5 +1,5 @@
 {
-  "name": "tom-sapletta-com/unittest-generator",
+  "name": "tom-sapletta-com/phunc-unittest-generator",
   "description": "Generating PHP Unittest",
   "type": "library",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "automatically tests",
     "PHPUnit tests"
   ],
-  "homepage": "https://github.com/tom-sapletta-com/unittest-generator",
+  "homepage": "https://github.com/tom-sapletta-com/phunc-unittest-generator",
   "authors": [
     {
       "name": "Tomasz Sapletta",
@@ -18,7 +18,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": "^5.3.3 || ^7.0",
-    "phpunit/phpunit": "5.5.*"
+    "phpunit/phpunit": "5.5.*",
+    "tom-sapletta-com/phunc": "*"
   },
   "autoload": {
     "psr-4": {
