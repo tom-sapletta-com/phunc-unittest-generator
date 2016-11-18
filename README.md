@@ -1,4 +1,5 @@
 # PHP Unit Test Generator (in progress, not ready...)
+[![Build Status](https://travis-ci.org/tom-sapletta-com/phunc-unittest-generator.svg?branch=master)](https://travis-ci.org)
 ## About
 With UnittestGenerator is possible create some part of file, but not all, beacue it is what must by defined by user, but i will try find some easy solution in the future, which can help with testing datatype and many methods.
 + files
